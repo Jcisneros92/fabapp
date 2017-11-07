@@ -271,13 +271,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                                     <a herf="#"><i class="fa fa-linode fa-fw"></i> Materials<span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Inventory</a>
+                                            <a href="/inventory/index.php"><i class="fa fa-bar-chart-o fa-fw"></i> Inventory</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-truck fa-fw"></i> Receive</a>
+                                            <a href="/inventory_receive/index.php"><i class="fa fa-truck fa-fw"></i> Receive</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-life-buoy fa-fw"></i> Manage Materials</a>
+                                            <a href="/inventory_edit/index.php"><i class="fa fa-life-buoy fa-fw"></i> Manage Materials</a>
                                         </li>
                                     </ul>
                                 </li>
