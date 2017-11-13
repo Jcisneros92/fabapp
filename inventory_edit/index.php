@@ -50,18 +50,13 @@ if (!$staff || $staff->getRoleID() < 7){
 
                             <div id="Existing" class="w3-container tab w3-center">
                               <h1>Existing</h1>
-                              <!-- <form class="w3-container" action="/action_page.php"> -->
+                              <form class "w3-container" action="action2_page.php" method="post">
                               <div class ="w3-section">
-                                <div class="w3-dropdown-hover">
-                                  <button class="btn btn-default btn-xlarge" id="headType" value="Type">Type</button><br>
-                                  <div class="w3-dropdown-content w3-bar-block w3-border">
-                                    <form>
-                                      <input type="button" class="w3-bar-item w3-button" id="type1" value="ABS" onclick="openType()">
-                                      <input type ="button" class="w3-bar-item w3-button" id ="type2" value="VINYL" onclick="openType()">
-                                    </form>
-                                  </div>
-                                </div>
-
+                                  <select name="type">
+                                    <option value="abs">ABS</option>
+                                    <option value="vinyl">Vinyl</option>
+                                  </select>
+                                  <br><br>
                                 <br><label><b>Color</b></label><br>
                                 <input class"w3-input w3-border w3-margin-bottom" type="text" placeholder="Color" name="color" required><br>
 
@@ -69,6 +64,7 @@ if (!$staff || $staff->getRoleID() < 7){
                                 <input class"w3-input w3-border w3-margin-bottom" type="amount" placeholder="Amount (grams)" name="qty" required><br>
 
                                 <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Add</button>
+                              </form>
                               </div>
                             </div>
                             <!-- End of Existing Material -->
@@ -219,23 +215,21 @@ if (!$staff || $staff->getRoleID() < 7){
 
                             <div id="Existing" class="w3-container tab w3-center">
                               <h1>Existing</h1>
-                              <!-- <form class="w3-container" action="/action_page.php"> -->
+                              <form class "w3-container" action="action2_page.php" method="post">
                               <div class ="w3-section">
-                                <div class="w3-dropdown-hover">
-                                  <button class="btn btn-default btn-xlarge">Type</button><br>
-                                  <div class="w3-dropdown-content w3-bar-block w3-border">
-                                    <a href="#" class="w3-bar-item w3-button" >ABS</a>
-                                    <a href="#" class="w3-bar-item w3-button">VINYL</a>
-                                  </div>
-                                </div>
-
+                                  <select name="type">
+                                    <option value="abs">ABS</option>
+                                    <option value="vinyl">Vinyl</option>
+                                  </select>
+                                  <br><br>
                                 <br><label><b>Color</b></label><br>
-                                <input class "w3-input w3-border w3-margin-bottom" type="text" placeholder="Color" name="color" required><br>
+                                <input class"w3-input w3-border w3-margin-bottom" type="text" placeholder="Color" name="color" required><br>
 
                                 <label><b>Qty of Material</b></label><br>
                                 <input class"w3-input w3-border w3-margin-bottom" type="amount" placeholder="Amount (grams)" name="qty" required><br>
 
                                 <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Add</button>
+                              </form>
                               </div>
                             </div>
                             <!-- End of Existing Material -->
